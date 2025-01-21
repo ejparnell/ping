@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Colors */
+    --blue: hsl(223, 87%, 63%);
+    --pale-blue: hsl(223, 100%, 88%);
+    --light-red: hsl(354, 100%, 66%);
+    --gray: hsl(0, 0%, 59%);
+    --very-dark-blue: hsl(209, 33%, 12%);
+    --white: hsl(0, 0%, 100%);
+
+    /* Typography */
+    --font-body: 'Libre Franklin', sans-serif;
+    --font-weight-semilight: 200;
+    --font-weight-regular: 300;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+}
+
+body {
+    font-family: var(--font-body);
+    font-weight: var(--font-weight-regular);
+    height: 100vh;
+    margin: 30px;
+}
+
+p {
+    font-size: 10px;
+    color: var(--gray);
+    font-weight: var(--font-weight-semilight);
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    text-align: left;
+}
+
+.header__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img__heading-logo {
+    height: 24px;
+    margin: 40px;
+}
+
+.span__heading-text {
+    font-weight: var(--font-weight-semilight);
+    color: var(--gray);
+}
+
+.header__heading-text {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.header__sub-heading-text {
+    font-weight: var(--font-weight-semilight);
+    font-size: 13px;
+}
+
+.img__dashboard-illustration {
+    width: 320px;
+    height: 192px;
+    margin-top: 50px;
+}
+
+.form__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.form__submit-button {
+    width: 100%;
+    height: 40px;
+    border: solid 1px var(--blue);
+    margin-bottom: 10px;
+    border-radius: 20px;
+    filter: drop-shadow(2px 2px 5px var(--gray));
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.form__container-input {
+    width: 100%;
+    height: 40px;
+    border: solid 1px var(--blue);
+    margin-bottom: 10px;
+    border-radius: 20px;
+    text-indent: 20px;
+}
+
+.form__container-input::placeholder {
+    color: var(--gray);
+}
+
+.section__social-media-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+}
+
+.section__social-media-container i {
+    font-size: 30px;
+    margin: 0 10px;
+    color: var(--blue);
+}
