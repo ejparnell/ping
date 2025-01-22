@@ -84,7 +84,7 @@ footer p {
 .img__dashboard-illustration {
     width: 320px;
     height: 192px;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .form__container {
@@ -124,7 +124,7 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 130px;
+    margin-top: 120px;
 }
 
 .section__social-media-container i {
@@ -133,7 +133,23 @@ footer p {
     color: var(--blue);
 }
 
+.section__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__message {
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 0px;
+    height: 10px;
+}
+
 @media screen and (min-width: 1024px) {
+    body {
+        margin: 10px;
+    }
+    
     .header__heading-text {
         font-size: 36px;
     }
